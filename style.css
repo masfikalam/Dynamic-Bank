@@ -1,0 +1,19 @@
+body {
+    background-image: url('img/cash.jpg');
+    background-size: cover;
+    padding-top: 100px;
+}
+
+h1 {
+    color: coral;
+    font-weight: bold;
+}
+
+main #login {
+    background-color: coral;
+    border: 2px solid black;
+}
+
+main #login:hover {
+    box-shadow: 0 0 10px 0 gray;
+}
