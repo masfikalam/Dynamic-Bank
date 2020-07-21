@@ -14,20 +14,57 @@
 
 <body>
 
-    <h1 class="text-center">Welcome to Dynamic Bank Limited</h1>
-
-    <!-- main area -->
-    <main class="bg-white w-50 mx-auto rounded p-5 mt-5">
-        <h3 class="text-center text-dark">Log Into Your Dynamic Account</h3>
-        <form class="mt-5 d-flex flex-column align-items-center">
+    <!-- login area -->
+    <section id="main">
+        <h1 class="text-center">Welcome to Dynamic Bank Limited</h1>
+        <div class="login-area bg-light w-50 mx-auto p-5 mt-5 d-flex flex-column align-items-center">
+            <h3 class="text-center text-dark mb-5">Log Into Your Dynamic Account</h3>
             <input type="email" name="email" placeholder="Your Email" class="form-control w-50 mx-auto mb-3">
             <input type="password" name="password" placeholder="Your Password" class="form-control w-50 mx-auto mb-3">
             <input id="login" type="submit" value="Log In" class="btn mt-4">
-        </form>
-    </main>
+        </div>
+    </section>
 
 
-
+    <!-- transaction area -->
+    <section id="transaction">
+        <div class="transaction-area bg-light w-75 mx-auto p-5">
+            <div class="row mb-5">
+                <div class="col-md-4 my-3 text-center">
+                    <div class="deposit box bg-primary text-white p-4">
+                        <h4>Deposit</h4>
+                        <p id="deposit-value">$0</p>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 text-center">
+                    <div class="withdraw box bg-danger text-white p-4">
+                        <h4>Withdraw</h4>
+                        <p id="withdraw-value">$0</p>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 text-center">
+                    <div class="balance box bg-success text-white p-4">
+                        <h4>Balance</h4>
+                        <p id="balance-value">$1580</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="money-form bg-white p-5 shadow">
+                        <input type="number" name="amount" placeholder="$ Deposit Amount" class="form-control mb-4">
+                        <input type="submit" value="Deposit" class="btn btn-primary">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="money-form bg-white p-5 shadow">
+                        <input type="number" name="amount" placeholder="$ Withdraw Amount" class="form-control mb-4">
+                        <input type="submit" value="Withdraw" class="btn btn-success">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

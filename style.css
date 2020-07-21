@@ -9,11 +9,27 @@ h1 {
     font-weight: bold;
 }
 
-main #login {
+#main .login-area,
+#transaction .transaction-area,
+#transaction .box,
+#transaction .money-form {
+    border-radius: 10px;
+}
+
+#main #login {
     background-color: coral;
     border: 2px solid black;
 }
 
-main #login:hover {
+#main #login:hover {
     box-shadow: 0 0 10px 0 gray;
+}
+
+#transaction {
+    display: none;
+}
+
+#transaction .box {
+    font-weight: bold;
+    font-size: 40px;
 }
