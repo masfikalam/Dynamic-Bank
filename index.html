@@ -33,35 +33,35 @@
                 <div class="col-md-4 my-3 text-center">
                     <div class="deposit box bg-primary text-white p-4">
                         <h4>Deposit</h4>
-                        <p id="deposit-value">$0</p>
+                        <p>$<span id="deposit-value">0</span></p>
                     </div>
                 </div>
                 <div class="col-md-4 my-3 text-center">
                     <div class="withdraw box bg-danger text-white p-4">
                         <h4>Withdraw</h4>
-                        <p id="withdraw-value">$0</p>
+                        <p>$<span id="withdraw-value">0</span></p>
                     </div>
                 </div>
                 <div class="col-md-4 my-3 text-center">
                     <div class="balance box bg-success text-white p-4">
                         <h4>Balance</h4>
-                        <p id="balance-value">$1580</p>
+                        <p>$<span id="balance-value">1580</span></p>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="money-form bg-white p-5 shadow">
                         <h4 class="mb-3">Deposit</h4>
-                        <input type="number" name="amount" placeholder="$ Amount" class="form-control mb-4">
-                        <input type="submit" value="Deposit" class="btn btn-primary">
+                        <input id="depo-amount" type="number" name="amount" placeholder="$ Amount" class="form-control mb-4">
+                        <input id="deposit" type="submit" value="Deposit" class="btn btn-primary">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="money-form bg-white p-5 shadow">
                         <h4 class="mb-3">Withdraw</h4>
-                        <input type="number" name="amount" placeholder="$ Amount" class="form-control mb-4">
-                        <input type="submit" value="Withdraw" class="btn btn-danger">
+                        <input id="with-amount" type="number" name="amount" placeholder="$ Amount" class="form-control mb-4">
+                        <input id="withdraw" type="submit" value="Withdraw" class="btn btn-danger">
                     </div>
                 </div>
             </div>
