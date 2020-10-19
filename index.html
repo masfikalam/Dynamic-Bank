@@ -16,49 +16,52 @@
 
     <!-- login area -->
     <section id="main">
-        <h1 class="text-center">Welcome to Dynamic Bank Limited</h1>
-        <div class="login-area bg-light w-50 mx-auto p-5 mt-5 d-flex flex-column align-items-center">
-            <h3 class="text-center text-dark mb-5">Log Into Your Dynamic Account</h3>
-            <input type="email" name="email" placeholder="Your Email" class="form-control w-50 mx-auto mb-3">
-            <input type="password" name="password" placeholder="Your Password" class="form-control w-50 mx-auto mb-3">
-            <input id="login" type="submit" value="Log In" class="btn mt-4">
+        <h1 class="text-center pt-5 mt-md-5">Welcome to Dynamic Bank Limited</h1>
+        <div class="container">
+            <div class="login-area bg-light p-5 mt-5 d-flex flex-column align-items-center">
+                <h3 class="text-center text-dark mb-5">Log Into Your Dynamic Account</h3>
+                <input type="email" name="email" placeholder="Your Email" class="form-control mb-3">
+                <input type="password" name="password" placeholder="Your Password" class="form-control mb-3">
+                <p class="text-success text-center">use any random email and password</p>
+                <input id="login" type="submit" value="Log In" class="btn mt-4">
+            </div>
         </div>
     </section>
 
 
     <!-- transaction area -->
     <section id="transaction">
-        <div class="transaction-area bg-light w-75 mx-auto p-5">
+        <div class="transaction-area bg-light py-3 px-1 p-sm-5 mt-5">
             <div class="row mb-5">
-                <div class="col-md-4 my-3 text-center">
-                    <div class="deposit box bg-primary text-white p-4">
+                <div class="col-4 my-3 text-center">
+                    <div class="deposit box bg-primary text-white p-1 p-sm-4">
                         <h4>Deposit</h4>
                         <p>$<span id="deposit-value">0</span></p>
                     </div>
                 </div>
-                <div class="col-md-4 my-3 text-center">
-                    <div class="withdraw box bg-danger text-white p-4">
+                <div class="col-4 my-3 text-center">
+                    <div class="withdraw box bg-danger text-white p-1 p-sm-4">
                         <h4>Withdraw</h4>
                         <p>$<span id="withdraw-value">0</span></p>
                     </div>
                 </div>
-                <div class="col-md-4 my-3 text-center">
-                    <div class="balance box bg-success text-white p-4">
+                <div class="col-4 my-3 text-center">
+                    <div class="balance box bg-success text-white p-1 p-sm-4">
                         <h4>Balance</h4>
                         <p>$<span id="balance-value">1580</span></p>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-md-6 mb-3">
-                    <div class="money-form bg-white p-5 shadow">
+                <div class="col-md-6 mb-3 text-center">
+                    <div class="money-form bg-white p-2 p-sm-5 shadow">
                         <h4 class="mb-3">Deposit</h4>
                         <input id="depo-amount" type="number" name="amount" placeholder="$ Amount" class="form-control mb-4">
                         <input id="deposit" type="submit" value="Deposit" class="btn btn-primary">
                     </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                    <div class="money-form bg-white p-5 shadow">
+                <div class="col-md-6 mb-3 text-center">
+                    <div class="money-form bg-white p-2 p-sm-5 shadow">
                         <h4 class="mb-3">Withdraw</h4>
                         <input id="with-amount" type="number" name="amount" placeholder="$ Amount" class="form-control mb-4">
                         <input id="withdraw" type="submit" value="Withdraw" class="btn btn-danger">

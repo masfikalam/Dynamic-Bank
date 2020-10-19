@@ -1,7 +1,6 @@
 body {
     background-image: url('img/cash.jpg');
     background-size: cover;
-    padding-top: 100px;
 }
 
 
@@ -9,6 +8,8 @@ body {
 
 #main .login-area {
     border-radius: 10px;
+    margin: auto;
+    max-width: 600px;
 }
 
 h1 {
@@ -30,6 +31,8 @@ h1 {
 
 #transaction {
     display: none;
+    margin: auto;
+    max-width: 900px;
 }
 
 #transaction .transaction-area,
@@ -41,4 +44,10 @@ h1 {
 #transaction .box {
     font-weight: bold;
     font-size: 40px;
+}
+
+@media (max-width:400px) {
+    #transaction .box h4, p {
+        font-size: 20px;
+}
 }
